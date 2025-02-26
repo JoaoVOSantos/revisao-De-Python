@@ -3,7 +3,6 @@ Projeto - Revisão
 Converter números Inteiros para Romanos.
 """
 
-
 """
 Int
 float
@@ -25,15 +24,13 @@ print(animals[1:5])
 # nome: str = input("Qual seu nome? ")
 # print(nome)
 
-def int_to_roman(number: int) -> str:   
-    """ 
+
+def int_to_roman(number: int) -> str:
+    """
     comentario dentro da função
-    Função que recebe um valor int e retorna o valor 
+    Função que recebe um valor int e retorna o valor
     em romano, como string.
     """
-    
-
-    
 
     symbols = {
         1000: 'M',
@@ -48,18 +45,18 @@ def int_to_roman(number: int) -> str:
         9: 'IX',
         5: 'V',
         4: 'IV',
-        1: 'I',   
+        1: 'I',
     }
-    
-    
+
     roman = ""
     for symbol in sorted(symbols.keys(), reverse=True):
         while number >= symbol:
             roman += symbols[symbol]
             number -= symbol
-            
-    return roman     
-    
+
+    return roman
+
+
 number = input("Digite um valor inteiro: ")
 roman = int_to_roman(int(number))
 print(roman)
