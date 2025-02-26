@@ -27,12 +27,12 @@ class Person:
         
         
     @property
-    def person_name(self):
+    def person_name(self) -> str:
         return self.name    
         
     
     @person_name.setter
-    def person_name(self, name):
+    def person_name(self, name: str):
         self.name = name    
         
 leticia = Person("Leticia","19")
