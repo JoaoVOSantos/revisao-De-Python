@@ -133,6 +133,7 @@ def gps(destino, solucoes):
     
  
  
+ 
 
 result = find_shortes_path(mapa, tabela)
 print(result)
